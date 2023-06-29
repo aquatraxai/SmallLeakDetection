@@ -69,11 +69,4 @@ class ImageDataset():
 
 
 
-"""
-if __name__ == '__main__':
-    csv_path = '/Users/laibamehnaz/Documents/Aquatrax/AMI_DATA.csv'
-    output_dir = ''
-    dataset = ImageDataset(csv_path, output_dir)
-    dataset.create_samples()
-    print("Total number of samples: {}".format(dataset.no_of_samples))
-"""
+
