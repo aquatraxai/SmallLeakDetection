@@ -26,9 +26,9 @@ To generate Fourier Transform graphs of meters, either on a weekly or a yearly b
   --n -1
 ```
 
-To train a k-means clustering model on the dataset:
+To train a k-means clustering model on the dataset, use the following code. ```--data_dir``` contains the input data with leaky or non-leaky meters. ```--img_size``` decides the number of features to be created per image(graph showing consumption. ofwater per day per account).```--processed_data_dir``` is the directory where the images are saved for further use in this file for training the model. ```--output_dir``` is the directory where the ouput of k-means clustering algorithm is saved(clusters in the dataset). ```--n``` controls the number of samples of the dataset to be used for training. Keep the rest of the arguments as it is for stable training. 
 ```
-!python train.py --data_dir '/AMI_DATA.csv' \
+!python train.py --data_dir '/Usagedata.csv' \
   --img_size 32 \
   --processed_data_dir '/img_data/' \
   --output_dir '/output/' \
