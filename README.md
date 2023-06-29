@@ -18,3 +18,10 @@ To fill the missing data, i.e., fill in the consumption for the missing days for
   --output_dir 'output/' \
   --n -1
 ```
+
+To generate Fourier Transform graphs of meters, either on a weekly or a yearly basis, use the following code with any of the two datasets: df_non_leaks.csv or df_leaks.csv. Make sure to make two different output folders when using the two datasets. For example, as shown for df_leaks.csv dataset.
+```
+!python dataGeneration.py --data_dir 'df_leaks.csv' \
+  --output_dir '/output/dukeLeaks/' \
+  --n -1
+```
